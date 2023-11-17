@@ -16,4 +16,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_DOG_CAT_DEMO }}
-        run: git push https://utility-ai:$HF_TOKEN@huggingface.co/spaces/utility-ai/Dog_Cat_predictor main
+        run: git push -f https://utility-ai:$HF_TOKEN@huggingface.co/spaces/utility-ai/Dog_Cat_predictor main
